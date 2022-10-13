@@ -1,0 +1,33 @@
+.main {
+    height: 70px;
+    border-radius: 15px;
+}
+
+.main1 {
+    background-color: rgb(89, 63, 151);
+}
+
+.main2 {
+    background-color: rgb(139, 125, 173);
+}
+
+.main3 {
+    background-color: rgb(221, 139, 152);
+}
+
+.btm {
+    width: 30px;
+    height: 30px;
+}
+
+.btm1 {
+    background: rgb(163, 155, 182);
+}
+
+.btm2 {
+    background-color: rgb(181, 165, 221);
+}
+
+.btm3 {
+    background-color: rgb(224, 178, 185);
+}

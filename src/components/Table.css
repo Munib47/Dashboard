@@ -1,0 +1,53 @@
+.tble {
+    border-radius: 15px;
+}
+
+.bar {
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.bar1 {
+    border-radius: 10px;
+    background-color: pink;
+}
+
+.text1 {
+    color: pink;
+}
+
+.bar2 {
+    border-radius: 10px;
+    /* background-color: pink; */
+}
+
+.text2 {
+    color: #007bff;
+}
+
+.bar3 {
+    border-radius: 10px;
+    /* background-color: pink; */
+}
+
+.text3 {
+    color: #007bff;
+}
+
+.bar4 {
+    border-radius: 10px;
+    background-color: pink;
+}
+
+.text4 {
+    color: pink;
+}
+
+.bar5 {
+    border-radius: 10px;
+    /* background-color: pink; */
+}
+
+.text5 {
+    color: #007bff;
+}
