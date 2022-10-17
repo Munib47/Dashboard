@@ -1,4 +1,5 @@
 import React from "react";
+import Container from "react-bootstrap/Container";
 import User1 from "../assets/user1-128x128.jpg";
 import User8 from "../assets/user8-128x128.jpg";
 import User3 from "../assets/user3-128x128.jpg";
@@ -6,43 +7,44 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-  <nav className="main-header navbar navbar-expand navbar-white navbar-light">
+    <nav className="main-header navbar navbar-expand navbar-white navbar-light">
+      <Container>
 
-    {/* Navbar Left Links */}
-    <ul className="navbar-nav">
-      <li className="nav-item">
-        <a className="nav-link" data-widget="pushmenu" to="javascript:void:;" role="button"><i className="fas fa-bars"></i></a>
-      </li>
-    </ul>
+        {/* Navbar Left Links */}
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <a className="nav-link" data-widget="pushmenu" to="javascript:void:;" role="button"><i className="fas fa-bars"></i></a>
+          </li>
+        </ul>
 
-    {/* Navbar Right Links */}
-    <ul className="navbar-nav ml-auto">
+        {/* Navbar Right Links */}
+        <ul className="navbar-nav ml-auto">
 
-      {/* Search box */}
-      <li className="nav-item">
-        <a className="nav-link" data-widget="navbar-search" href="javascript:void:;" role="button">
-          <i className="fas fa-search"></i>
-        </a>
-        <div className="navbar-search-block">
-          <form className="form-inline">
-            <div className="input-group input-group-sm">
-              <input className="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search" />
-              <div className="input-group-append">
-                <button className="btn btn-navbar" type="submit">
-                  <i className="fas fa-search"></i>
-                </button>
-                <button className="btn btn-navbar" type="button" data-widget="navbar-search">
-                  <i className="fas fa-times"></i>
-                </button>
-              </div>
+          {/* Search box */}
+          <li className="nav-item">
+            <a className="nav-link" data-widget="navbar-search" href="javascript:void:;" role="button">
+              <i className="fas fa-search"></i>
+            </a>
+            <div className="navbar-search-block">
+              <form className="form-inline">
+                <div className="input-group input-group-sm">
+                  <input className="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search" />
+                  <div className="input-group-append">
+                    <button className="btn btn-navbar" type="submit">
+                      <i className="fas fa-search"></i>
+                    </button>
+                    <button className="btn btn-navbar" type="button" data-widget="navbar-search">
+                      <i className="fas fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
-          </form>
-        </div>
-      </li>
-      
-      {/* Messages */}
+          </li>
 
-      {/* <li className="nav-item dropdown">
+          {/* Messages */}
+
+          {/* <li className="nav-item dropdown">
         <a className="nav-link" data-toggle="dropdown" href="javascript:void:;">
           <i className="far fa-comments"></i>
           <span className="badge badge-danger navbar-badge">3</span>
@@ -93,8 +95,8 @@ const Navbar = () => {
           <a href="javascript:void:;" className="dropdown-item dropdown-footer">See All Messages</a>
         </div>
       </li> */}
-      
-      {/* <li className="nav-item dropdown">
+
+          {/* <li className="nav-item dropdown">
         <a className="nav-link" data-toggle="dropdown" href="javascript:void:;">
           <i className="far fa-bell"></i>
           <span className="badge badge-warning navbar-badge">15</span>
@@ -120,19 +122,20 @@ const Navbar = () => {
           <a href="javascript:void:;" className="dropdown-item dropdown-footer">See All Notifications</a>
         </div>
       </li> */}
-      
-      <li className="nav-item">
-        <a className="nav-link" data-widget="fullscreen" href="javascript:void:;" role="button">
-          <i className="fas fa-expand-arrows-alt"></i>
-        </a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" data-widget="control-sidebar" data-slide="true" href="javascript:void:;" role="button">
-          <i className="fas fa-th-large"></i>
-        </a>
-      </li>
-    </ul>
-  </nav>
+
+          <li className="nav-item">
+            <a className="nav-link" data-widget="fullscreen" href="javascript:void:;" role="button">
+              <i className="fas fa-expand-arrows-alt"></i>
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" data-widget="control-sidebar" data-slide="true" href="javascript:void:;" role="button">
+              <i className="fas fa-th-large"></i>
+            </a>
+          </li>
+        </ul>
+      </Container>
+    </nav>
   );
 };
 
