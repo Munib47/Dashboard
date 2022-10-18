@@ -1,46 +1,50 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
 import User1 from "../assets/user1-128x128.jpg";
 import User8 from "../assets/user8-128x128.jpg";
 import User3 from "../assets/user3-128x128.jpg";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navb = () => {
   return (
-    <nav className="main-header navbar navbar-expand navbar-white navbar-light">
+    <Navbar className="main-header navbar navbar-expand navbar-white navbar-light">
       <Container>
 
         {/* Navbar Left Links */}
-        <ul className="navbar-nav">
-          <li className="nav-item">
-            <a className="nav-link" data-widget="pushmenu" to="javascript:void:;" role="button"><i className="fas fa-bars"></i></a>
-          </li>
-        </ul>
+        <Nav className="navbar-nav">
+          <Nav.Item className="nav-item">
+            <Nav.Link className="nav-link" data-widget="pushmenu" to="javascript:void:;" role="button"><i className="fas fa-bars"></i></Nav.Link>
+          </Nav.Item>
+        </Nav>
 
         {/* Navbar Right Links */}
-        <ul className="navbar-nav ml-auto">
+        <Nav className="navbar-nav ml-auto">
 
           {/* Search box */}
-          <li className="nav-item">
-            <a className="nav-link" data-widget="navbar-search" href="javascript:void:;" role="button">
+          <Nav.Item className="nav-item">
+            <Nav.Link className="nav-link" data-widget="navbar-search" href="javascript:void:;" role="button">
               <i className="fas fa-search"></i>
-            </a>
+            </Nav.Link>
             <div className="navbar-search-block">
-              <form className="form-inline">
+              <Form className="form-inline">
                 <div className="input-group input-group-sm">
-                  <input className="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search" />
+                  <Form.Control className="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search" />
                   <div className="input-group-append">
-                    <button className="btn btn-navbar" type="submit">
+                    <Button className="btn btn-navbar" type="submit">
                       <i className="fas fa-search"></i>
-                    </button>
-                    <button className="btn btn-navbar" type="button" data-widget="navbar-search">
+                    </Button>
+                    <Button className="btn btn-navbar" type="button" data-widget="navbar-search">
                       <i className="fas fa-times"></i>
-                    </button>
+                    </Button>
                   </div>
                 </div>
-              </form>
+              </Form>
             </div>
-          </li>
+          </Nav.Item>
 
           {/* Messages */}
 
@@ -123,20 +127,20 @@ const Navbar = () => {
         </div>
       </li> */}
 
-          <li className="nav-item">
-            <a className="nav-link" data-widget="fullscreen" href="javascript:void:;" role="button">
+          <Nav.Item className="nav-item">
+            <Nav.Link className="nav-link" data-widget="fullscreen" href="javascript:void:;" role="button">
               <i className="fas fa-expand-arrows-alt"></i>
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" data-widget="control-sidebar" data-slide="true" href="javascript:void:;" role="button">
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item className="nav-item">
+            <Nav.Link className="nav-link" data-widget="control-sidebar" data-slide="true" href="javascript:void:;" role="button">
               <i className="fas fa-th-large"></i>
-            </a>
-          </li>
-        </ul>
+            </Nav.Link>
+          </Nav.Item>
+        </Nav>
       </Container>
-    </nav>
+    </Navbar>
   );
 };
 
-export default Navbar;
+export default Navb;

@@ -1,6 +1,6 @@
 import LeftSidebar from "../components/LeftSidebar";
 import RightSidebar from "../components/RightSidebar";
-import Navbar from "../components/Navbar";
+import Navb from "../components/Navb";
 import Footer from "../components/Footer";
 import Prog from "../components/Prog";
 import Courses from "../components/Courses";
@@ -11,7 +11,7 @@ import Col from "react-bootstrap/Col";
 const Dashboard = () => {
   return (
     <>
-      <Navbar />
+      <Navb />
       <LeftSidebar />
 
       {/* Main content component */}

@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import AdexLogo from "../assets/AdexIcon.jpg";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
 
 
 
@@ -20,14 +22,14 @@ const LeftSidebar = () => {
       </Link>
 
       <div className="sidebar">
-        <nav className="mt-2">
-          <ul
+        <Navbar className="mt-2 navbar-dark">
+          <Nav
             className="nav nav-pills nav-sidebar flex-column"
             data-widget="treeview"
             role="menu"
             data-accordion="false"
           >
-            <li className="nav-item">
+            <Nav.Item className="nav-item">
               <Link to="/dashboard" className="nav-link">
                 <i className="nav-icon fas fa-user"></i>
                 <p>
@@ -36,9 +38,9 @@ const LeftSidebar = () => {
                 </p>
               </Link>
               
-            </li>
+            </Nav.Item>
 
-            <li className="nav-item">
+            <Nav.Item className="nav-item">
               <Link to="/latestresults" className="nav-link">
               <i class="fas fa-solid fa-chart-line"></i>
                 <p>
@@ -47,9 +49,9 @@ const LeftSidebar = () => {
                 </p>
               </Link>
               
-            </li>
+            </Nav.Item>
 
-            <li className="nav-item">
+            <Nav.Item className="nav-item">
               <Link to="#" className="nav-link">
               <i class="fas fa-sharp fa-solid fa-book-open"></i>
                 <p>
@@ -58,12 +60,12 @@ const LeftSidebar = () => {
                 </p>
               </Link>
               
-            </li>
+            </Nav.Item>
 
 
 
-          </ul>
-        </nav>
+          </Nav>
+        </Navbar>
       </div>
 
     

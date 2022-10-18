@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link, useParams } from 'react-router-dom';
-import Navbar from './Navbar';
+import Navb from './Navb';
 import LeftSidebar from './LeftSidebar';
 import RightSidebar from './RightSidebar';
 import Footer from './Footer';
+import Table from 'react-bootstrap/Table';
+import Button from 'react-bootstrap/Button';
 
 const DetailResult = () => {
     const [data, setData] = useState([]);
@@ -25,7 +27,7 @@ const DetailResult = () => {
     console.log(data)
     return (
         <div>
-            <Navbar />
+            <Navb />
             <LeftSidebar />
 
             <div className="content-wrapper">
@@ -33,7 +35,7 @@ const DetailResult = () => {
                     <div className="container-fluid">
                         <div className="row mb-2">
                             <div className="col-sm-12 rounded pt-4">
-                                <table className="table">
+                                <Table className="table">
                                     <thead className='thead bg-primary'>
                                         <tr>
                                             <th>Name</th>
@@ -58,11 +60,11 @@ const DetailResult = () => {
                                             <td className="border border-dark p-1">{data?.address?.zipcode}</td>
                                         </tr>
                                     </tbody>
-                                </table>
+                                </Table>
                                 <br />
                                 <div className="d-flex justify-content-end">
                                     <div className="d-flex justify-content-end pr-5 w-25">
-                                        <button className="border-0 bg-success rounded w-25"><Link to={`/latestresults`}>Back</Link></button>
+                                        <Button className="btn btn-success border-0 rounded w-25"><Link to={`/latestresults`}>Back</Link></Button>
                                     </div>
                                 </div>
                             </div>

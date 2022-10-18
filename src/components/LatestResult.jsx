@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from './Footer';
 import LeftSidebar from './LeftSidebar';
-import Navbar from './Navbar';
+import Navb from './Navb';
 import RightSidebar from './RightSidebar';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
@@ -9,6 +9,8 @@ import './LatestResult.css';
 import {
   Link
 } from "react-router-dom";
+import Table from 'react-bootstrap/Table';
+import Button from 'react-bootstrap/Button';
 
 const LatestResult = () => {
     const [data, setData] = useState([])
@@ -29,7 +31,7 @@ const LatestResult = () => {
 
     return (
         <div>
-            <Navbar />
+            <Navb />
             <LeftSidebar />
 
             <div className="content-wrapper">
@@ -37,7 +39,7 @@ const LatestResult = () => {
                     <div className="container-fluid">
                         <div className="row mb-2">
                             <div className="col-sm-12 rounded pt-4 pl-5 pb-4">
-                                <table className="table">
+                                <Table className="table">
                                     <thead className="thead bg-primary">
                                         <tr>
                                             <th>Name</th>
@@ -54,13 +56,13 @@ const LatestResult = () => {
                                                         <td>{d.name}</td>
                                                         <td>{d.username}</td>
                                                         <td>{d.phone}</td>
-                                                        <td className="d-flex justify-content-center"><button className="bg-success border-0 rounded w-50"><Link to={`/latestresults/detail/${d.id}`}>View</Link></button></td>
+                                                        <td className="d-flex justify-content-center"><Button className="bg-success border-0 rounded w-50"><Link to={`/latestresults/detail/${d.id}`}>View</Link></Button></td>
                                                     </tr>
                                                 )
                                             })
                                         }
                                     </tbody>
-                                </table>
+                                </Table>
                             </div>
 
                         </div>
