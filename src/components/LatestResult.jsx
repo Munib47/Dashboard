@@ -66,9 +66,6 @@ const LatestResult = () => {
                             </div>
 
                         </div>
-                        {/* <Table /> */}
-
-                        {/* <Courses /> */}
                     </div>
                 </div>
 
